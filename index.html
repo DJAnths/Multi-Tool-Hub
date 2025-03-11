@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiTools Hub - Your One-Stop Solution for Online Tools</title>
+    <meta name="description" content="A comprehensive collection of 100+ online tools for various purposes including image processing, SEO, text utilities, calculations, and more.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Container -->
+    <div id="header-container"></div>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Hero Section -->
+        <section class="hero-section text-center mb-5">
+            <h1 class="display-4 mb-3">Welcome to MultiTools Hub</h1>
+            <p class="lead mb-4">Your comprehensive collection of online tools for various purposes. Fast, reliable, and easy to use.</p>
+            <div class="search-container mb-4">
+                <form class="search-form mx-auto">
+                    <div class="input-group">
+                        <input type="search" class="form-control" id="toolSearch" placeholder="Search for tools...">
+                        <button class="btn btn-primary" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Category Navigation -->
+        <section class="category-nav mb-5">
+            <div class="row g-3">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <button class="btn btn-outline-primary w-100 category-btn active" data-category="all">
+                        <i class="fas fa-th-large me-2"></i>All Tools
+                    </button>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <button class="btn btn-outline-primary w-100 category-btn" data-category="image">
+                        <i class="fas fa-image me-2"></i>Image Tools
+                    </button>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <button class="btn btn-outline-primary w-100 category-btn" data-category="seo">
+                        <i class="fas fa-search me-2"></i>SEO Tools
+                    </button>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <button class="btn btn-outline-primary w-100 category-btn" data-category="text">
+                        <i class="fas fa-font me-2"></i>Text Tools
+                    </button>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <button class="btn btn-outline-primary w-100 category-btn" data-category="developer">
+                        <i class="fas fa-code me-2"></i>Developer Tools
+                    </button>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <button class="btn btn-outline-primary w-100 category-btn" data-category="calculator">
+                        <i class="fas fa-calculator me-2"></i>Calculators
+                    </button>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <button class="btn btn-outline-primary w-100 category-btn" data-category="converter">
+                        <i class="fas fa-exchange-alt me-2"></i>Unit Converters
+                    </button>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <button class="btn btn-outline-primary w-100 category-btn" data-category="security">
+                        <i class="fas fa-shield-alt me-2"></i>Security Tools
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Dashboard -->
+        <section class="tools-dashboard">
+            <!-- Image Tools -->
+            <div class="category-section" data-category="image">
+                <h2 class="category-title">Image Tools</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="image">
+                            <div class="card-body">
+                                <h5 class="card-title">Image to PNG</h5>
+                                <p class="card-text">Convert your images to PNG format with high quality.</p>
+                                <a href="tools/image-tools/image-to-png.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="image">
+                            <div class="card-body">
+                                <h5 class="card-title">Image to JPG</h5>
+                                <p class="card-text">Convert images to JPG format efficiently.</p>
+                                <a href="tools/image-tools/image-to-jpg.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="image">
+                            <div class="card-body">
+                                <h5 class="card-title">Image Resizer</h5>
+                                <p class="card-text">Resize images while maintaining quality.</p>
+                                <a href="tools/image-tools/image-resizer.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEO Tools -->
+            <div class="category-section" data-category="seo">
+                <h2 class="category-title">SEO Tools</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="seo">
+                            <div class="card-body">
+                                <h5 class="card-title">Meta Tag Generator</h5>
+                                <p class="card-text">Generate optimized meta tags for your website.</p>
+                                <a href="tools/seo-tools/meta-tag-generator.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="seo">
+                            <div class="card-body">
+                                <h5 class="card-title">Keyword Density Checker</h5>
+                                <p class="card-text">Analyze keyword density in your content.</p>
+                                <a href="tools/seo-tools/keyword-density.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Tools -->
+            <div class="category-section" data-category="text">
+                <h2 class="category-title">Text Tools</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="text">
+                            <div class="card-body">
+                                <h5 class="card-title">Word Counter</h5>
+                                <p class="card-text">Count words, characters, and paragraphs in your text.</p>
+                                <a href="tools/text-tools/word-counter.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="text">
+                            <div class="card-body">
+                                <h5 class="card-title">Case Converter</h5>
+                                <p class="card-text">Convert text case to uppercase, lowercase, or title case.</p>
+                                <a href="tools/text-tools/case-converter.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Developer Tools -->
+            <div class="category-section" data-category="developer">
+                <h2 class="category-title">Developer Tools</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="developer">
+                            <div class="card-body">
+                                <h5 class="card-title">JSON Formatter</h5>
+                                <p class="card-text">Format and validate your JSON data.</p>
+                                <a href="tools/developer-tools/json-formatter.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="developer">
+                            <div class="card-body">
+                                <h5 class="card-title">HTML Minifier</h5>
+                                <p class="card-text">Minify HTML code to reduce file size.</p>
+                                <a href="tools/developer-tools/html-minifier.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Security Tools -->
+            <div class="category-section" data-category="security">
+                <h2 class="category-title">Security Tools</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="security">
+                            <div class="card-body">
+                                <h5 class="card-title">Password Generator</h5>
+                                <p class="card-text">Generate strong, secure passwords with customizable options.</p>
+                                <a href="tools/security-tools/password-generator.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="security">
+                            <div class="card-body">
+                                <h5 class="card-title">Hash Generator</h5>
+                                <p class="card-text">Generate various types of cryptographic hashes.</p>
+                                <a href="tools/security-tools/hash-generator.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Calculator Tools -->
+            <div class="category-section" data-category="calculator">
+                <h2 class="category-title">Calculators</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="calculator">
+                            <div class="card-body">
+                                <h5 class="card-title">Unit Converter</h5>
+                                <p class="card-text">Convert between different units of measurement.</p>
+                                <a href="tools/calculators/unit-converter.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="tool-card" data-category="calculator">
+                            <div class="card-body">
+                                <h5 class="card-title">BMI Calculator</h5>
+                                <p class="card-text">Calculate your Body Mass Index instantly.</p>
+                                <a href="tools/calculators/bmi-calculator.html" class="btn btn-primary">Use Tool</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Container for Notifications -->
+        <div id="message-container" class="position-fixed bottom-0 end-0 p-3"></div>
+    </main>
+
+    <!-- Footer Container -->
+    <div id="footer-container"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script>
+        // Category filtering
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const category = this.dataset.category;
+                
+                // Update active button
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Show/hide categories
+                document.querySelectorAll('.category-section').forEach(section => {
+                    if (category === 'all' || section.dataset.category === category) {
+                        section.style.display = 'block';
+                    } else {
+                        section.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
